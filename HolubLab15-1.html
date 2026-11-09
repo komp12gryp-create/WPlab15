@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 1</title>
+</head>
+<body>
+<script>
+let number = 2;
+
+while (number <= 100) {
+    let prime = true;
+    let divisor = 2;
+
+    while (divisor < number) {
+        if (number % divisor === 0) {
+            prime = false;
+            break;
+        }
+        divisor++;
+    }
+
+    if (prime) {
+        document.write(number + "<br>");
+    }
+    number++;
+}
+</script>
+</body>
+</html>
